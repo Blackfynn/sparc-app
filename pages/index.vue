@@ -17,6 +17,8 @@
     <homepage-news />
 
     <homepage-testimonials />
+
+    <homepage-twitter />
   </div>
 </template>
 
@@ -26,6 +28,7 @@ import PageHero from '@/components/PageHero/PageHero.vue'
 import FeaturedDatasets from '@/components/FeaturedDatasets/FeaturedDatasets.vue'
 import HomepageNews from '@/components/HomepageNews/HomepageNews.vue'
 import HomepageTestimonials from '@/components/HomepageTestimonials/HomepageTestimonials.vue'
+import HomepageTwitter from '@/components/HomepageTwitter/HomepageTwitter.vue'
 
 export default {
   name: 'SparcHomepage',
@@ -35,7 +38,8 @@ export default {
     PageHero,
     FeaturedDatasets,
     HomepageNews,
-    HomepageTestimonials
+    HomepageTestimonials,
+    HomepageTwitter
   }
 }
 </script>
