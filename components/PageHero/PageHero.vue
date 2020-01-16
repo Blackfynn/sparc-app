@@ -24,9 +24,21 @@ export default {
     rgb(188, 0, 252) 100%
   );
   color: #f0f2f5;
-  font-size: 1.625em;
-  line-height: 2.375rem;
-  padding: 3em 0;
+  font-size: 1em;
+  line-height: 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
+  @media (min-width: 768px) {
+    font-size: 1.625em;
+    line-height: 2.375rem;
+    padding: 3rem 0;
+  }
+  p {
+    margin: 0 auto 1rem;
+    max-width: 58rem;
+    @media (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
 }
 </style>
