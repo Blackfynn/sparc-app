@@ -15,23 +15,27 @@
     <featured-datasets />
 
     <homepage-news />
+
+    <homepage-testimonials />
   </div>
 </template>
 
 <script>
 import BfButton from '@/components/shared/BfButton/BfButton.vue'
+import PageHero from '@/components/PageHero/PageHero.vue'
 import FeaturedDatasets from '@/components/FeaturedDatasets/FeaturedDatasets.vue'
 import HomepageNews from '@/components/HomepageNews/HomepageNews.vue'
-import PageHero from '@/components/PageHero/PageHero.vue'
+import HomepageTestimonials from '@/components/HomepageTestimonials/HomepageTestimonials.vue'
 
 export default {
   name: 'SparcHomepage',
 
   components: {
     BfButton,
+    PageHero,
     FeaturedDatasets,
     HomepageNews,
-    PageHero
+    HomepageTestimonials
   }
 }
 </script>
