@@ -72,8 +72,12 @@ export default {
 
 .home-container {
   box-sizing: border-box;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-width: 768px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 .homepage-testimonials {
   background: #24245b;

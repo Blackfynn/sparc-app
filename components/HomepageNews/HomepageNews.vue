@@ -53,8 +53,12 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/_variables.scss';
 .home-container {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-width: 768px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 .sparc-card {
   margin-bottom: 24px;
