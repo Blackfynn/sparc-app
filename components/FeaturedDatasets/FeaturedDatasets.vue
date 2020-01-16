@@ -34,61 +34,61 @@ const mockDatasets = [
     id: 0,
     name: '123',
     type: 'Category 0',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 1,
     name: '123',
     type: 'Category 1',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 2,
     name: '123',
     type: 'Category 2',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 3,
     name: '123',
     type: 'Category 3',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 4,
     name: '123',
     type: 'Category 4',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 5,
     name: '123',
     type: 'Category 5',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 6,
     name: '123',
     type: 'Category 6',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 7,
     name: '123',
     type: 'Category 7',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 8,
     name: '123',
     type: 'Category 8',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   },
   {
     id: 9,
     name: '123',
     type: 'Category 9',
-    image: 'https://placehold.it/252x252'
+    image: 'https://placeholder.pics/svg/252x252'
   }
 ]
 export default {

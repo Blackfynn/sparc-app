@@ -4,7 +4,7 @@
       <el-col :xs="22" :sm="22" :md="22" :lg="20" :xl="18">
         <h2>News &amp; Upcoming Events</h2>
         <sparc-card
-          image="https://placehold.it/544x394"
+          image="https://placeholder.pics/svg/544x394"
           image-alt="2020 SPARC Ideas Lab"
         >
           <h3>2020 SPARC Ideas Lab</h3>
@@ -18,7 +18,7 @@
         </sparc-card>
 
         <sparc-card
-          image="https://placehold.it/544x394"
+          image="https://placeholder.pics/svg/544x394"
           image-alt="2020 SPARC Ideas Lab"
           image-align="right"
         >
