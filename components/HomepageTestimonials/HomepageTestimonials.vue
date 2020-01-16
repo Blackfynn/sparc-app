@@ -1,44 +1,40 @@
 <template>
   <div class="homepage-testimonials">
-    <div class="container">
-      <el-row type="flex" justify="center">
-        <el-col :xs="22" :sm="22" :md="22" :lg="20" :xl="18">
-          <h2>Connecting the Datascience Community</h2>
-          <div class="homepage-testimonials__testimonial-wrap">
-            <div
-              v-for="(testimonial, idx) in testimonials"
-              :key="testimonial.author"
-              class="homepage-testimonials__testimonial"
-              :class="{
-                'homepage-testimonials__testimonial--active':
-                  activeTestimonial === idx
-              }"
-            >
-              <p>{{ testimonial.copy }}</p>
-              <span>&mdash; {{ testimonial.author }}</span>
-            </div>
-          </div>
+    <div class="container home-container">
+      <h2>Connecting the Datascience Community</h2>
+      <div class="homepage-testimonials__testimonial-wrap">
+        <div
+          v-for="(testimonial, idx) in testimonials"
+          :key="testimonial.author"
+          class="homepage-testimonials__testimonial"
+          :class="{
+            'homepage-testimonials__testimonial--active':
+              activeTestimonial === idx
+          }"
+        >
+          <p>{{ testimonial.copy }}</p>
+          <span>&mdash; {{ testimonial.author }}</span>
+        </div>
+      </div>
 
-          <div class="homepage-testimonials__anchor-wrap">
-            <button
-              v-for="(testimonial, idx) in testimonials"
-              :key="testimonial.author"
-              class="homepage-testimonials__testimonial-anchor"
-              :class="{
-                'homepage-testimonials__testimonial-anchor--active':
-                  activeTestimonial === idx
-              }"
-              @click="activeTestimonial = idx"
-            >
-              <div class="homepage-testimonials__testimonial-anchor__indicator">
-                <span class="visuallyhidden">
-                  Go to tab for {{ testimonial.author }}
-                </span>
-              </div>
-            </button>
+      <div class="homepage-testimonials__anchor-wrap">
+        <button
+          v-for="(testimonial, idx) in testimonials"
+          :key="testimonial.author"
+          class="homepage-testimonials__testimonial-anchor"
+          :class="{
+            'homepage-testimonials__testimonial-anchor--active':
+              activeTestimonial === idx
+          }"
+          @click="activeTestimonial = idx"
+        >
+          <div class="homepage-testimonials__testimonial-anchor__indicator">
+            <span class="visuallyhidden">
+              Go to tab for {{ testimonial.author }}
+            </span>
           </div>
-        </el-col>
-      </el-row>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -73,6 +69,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.home-container {
+  box-sizing: border-box;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .homepage-testimonials {
   background: #24245b;
   color: #fff;
@@ -109,7 +111,13 @@ p {
   flex: 1 0 0em; // Unit required for IE11
   @media (min-width: 768px) {
     display: block;
-    margin: 0 1.75em;
+    margin: 0 2rem;
+  }
+  &:first-child {
+    margin-left: 0
+  }
+  &:last-child {
+    margin-right: 0
   }
   &--active {
     display: block;

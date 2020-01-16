@@ -1,29 +1,22 @@
 <template>
   <div class="featured-datasets container">
-    <el-row type="flex" justify="center">
-      <el-col :xs="22" :sm="22" :md="22" :lg="20" :xl="18">
-        <h2>Browse Datasets by Categories</h2>
-        <div class="datasets-wrap">
-          <nuxt-link
-            v-for="dataset in datasets"
-            :key="dataset.id"
-            class="dataset"
-            :to="{
-              name: 'datasets-datasetId',
-              params: { datasetId: dataset.id }
-            }"
-          >
-            <img
-              :src="dataset.image"
-              :alt="`Icon for ${dataset.type} dataset`"
-            />
-            <p class="mb-0 mt-8">
-              {{ dataset.type }}
-            </p>
-          </nuxt-link>
-        </div>
-      </el-col>
-    </el-row>
+    <h2>Browse Datasets by Categories</h2>
+    <div class="datasets-wrap">
+      <nuxt-link
+        v-for="dataset in datasets"
+        :key="dataset.id"
+        class="dataset"
+        :to="{
+          name: 'datasets-datasetId',
+          params: { datasetId: dataset.id }
+        }"
+      >
+        <img :src="dataset.image" :alt="`Icon for ${dataset.type} dataset`" />
+        <p class="mb-0 mt-8">
+          {{ dataset.type }}
+        </p>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -117,6 +110,10 @@ h2 {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  @media (min-width: 768px) {
+    padding-left: 0.4375rem;
+    padding-right: 0.4375rem;
+  }
 }
 .dataset {
   color: #000;
@@ -126,7 +123,7 @@ h2 {
   @media (min-width: 768px) {
     height: 126px;
     width: 126px;
-    margin: 1.5625em 2em;
+    margin: 1.5625em 3.5625rem;
   }
   &:hover,
   &:focus {
