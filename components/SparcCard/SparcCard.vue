@@ -58,7 +58,7 @@ export default {
   }
   &__image,
   &__content-wrap {
-    flex: 1 0 0;
+    flex: 1 0 0em; // Unit required for IE11
     &__content {
       background: #24245b;
       color: #fff;

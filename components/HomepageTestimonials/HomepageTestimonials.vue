@@ -106,7 +106,7 @@ p {
 }
 .homepage-testimonials__testimonial {
   display: none;
-  flex: 1 0 0;
+  flex: 1 0 0em; // Unit required for IE11
   @media (min-width: 768px) {
     display: block;
     margin: 0 1.75em;
