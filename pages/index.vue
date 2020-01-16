@@ -11,11 +11,14 @@
         Browse All Data
       </bf-button>
     </page-hero>
+
+    <featured-datasets />
   </div>
 </template>
 
 <script>
 import BfButton from '@/components/shared/BfButton/BfButton.vue'
+import FeaturedDatasets from '@/components/FeaturedDatasets/FeaturedDatasets.vue'
 import PageHero from '@/components/PageHero/PageHero.vue'
 
 export default {
@@ -23,11 +26,19 @@ export default {
 
   components: {
     BfButton,
+    FeaturedDatasets,
     PageHero
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
+::v-deep h2 {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 2rem;
+  @media (min-width: 768px) {
+    font-size: 1.5em;
+  }
+}
 </style>
