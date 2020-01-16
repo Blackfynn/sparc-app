@@ -13,12 +13,15 @@
     </page-hero>
 
     <featured-datasets />
+
+    <homepage-news />
   </div>
 </template>
 
 <script>
 import BfButton from '@/components/shared/BfButton/BfButton.vue'
 import FeaturedDatasets from '@/components/FeaturedDatasets/FeaturedDatasets.vue'
+import HomepageNews from '@/components/HomepageNews/HomepageNews.vue'
 import PageHero from '@/components/PageHero/PageHero.vue'
 
 export default {
@@ -27,6 +30,7 @@ export default {
   components: {
     BfButton,
     FeaturedDatasets,
+    HomepageNews,
     PageHero
   }
 }
@@ -37,8 +41,11 @@ export default {
   font-size: 1em;
   font-weight: 700;
   line-height: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
   @media (min-width: 768px) {
     font-size: 1.5em;
+    margin-bottom: 2rem;
   }
 }
 </style>
